@@ -147,6 +147,7 @@ class Projects extends Component {
     componentDidMount() {
         const {active} = this.state
         const {category} = this.props.match.params
+        console.log(category)
         if (this.props.match.params.category) {
            if (category === 'Academic' && active !== 0) {
                this.setState({active: 0})
