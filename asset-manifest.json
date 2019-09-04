@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/homepage-react-app/static/css/main.26f3ffcd.chunk.css",
+    "main.js": "/homepage-react-app/static/js/main.0e2f552c.chunk.js",
+    "main.js.map": "/homepage-react-app/static/js/main.0e2f552c.chunk.js.map",
+    "runtime~main.js": "/homepage-react-app/static/js/runtime~main.07da17e5.js",
+    "runtime~main.js.map": "/homepage-react-app/static/js/runtime~main.07da17e5.js.map",
+    "static/js/2.43b5da79.chunk.js": "/homepage-react-app/static/js/2.43b5da79.chunk.js",
+    "static/js/2.43b5da79.chunk.js.map": "/homepage-react-app/static/js/2.43b5da79.chunk.js.map",
+    "index.html": "/homepage-react-app/index.html",
+    "precache-manifest.e56be7904e898b3ec1140e553f983135.js": "/homepage-react-app/precache-manifest.e56be7904e898b3ec1140e553f983135.js",
+    "service-worker.js": "/homepage-react-app/service-worker.js",
+    "static/css/main.26f3ffcd.chunk.css.map": "/homepage-react-app/static/css/main.26f3ffcd.chunk.css.map",
+    "static/media/main.scss": "/homepage-react-app/static/media/hurme_geometric_sans.5ec8f863.woff"
+  }
+}
