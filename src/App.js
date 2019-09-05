@@ -14,7 +14,9 @@ class App extends Component {
     return (
       <Router>
       <Switch >
-      <Route path="/:category" render={(props) => <Home {...props} />}/>
+      <Route path="/Academic" render={(props) => <Home {...props}  category={0}/>}/>
+      <Route path="/Professional" render={(props) => <Home {...props}  category={1}/>}/>
+      <Route path="/Creative" render={(props) => <Home {...props}  category={2}/>}/>
       <Route path="/code" component={CodePage} />
       <Route path="/electronic" component={ElectronicMusic} />
       <Route path="/" component={Home} />

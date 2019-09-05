@@ -8,7 +8,7 @@ class Projects extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            active: 1
+            active: 0
         }
     }
      
@@ -145,16 +145,10 @@ class Projects extends Component {
     }
 
     componentDidMount() {
-        const {active} = this.state
-        const {category} = this.props.match.params
-        if (this.props.match.params.category) {
-           if (category === 'Academic' && active !== 0) {
-               this.setState({active: 0})
-           } else if (category === 'Professional' && active !== 1) {
-            this.setState({active: 1})
-           } else if (category === 'Creative' && active !== 2) {
-            this.setState({active: 2})
-           }
+        const {category}= this.props
+        console.log(category)
+        if (category && this.state.active !== category) {
+           this.setState({active: category})
         }
     }
     
