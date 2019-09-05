@@ -14,10 +14,11 @@ class App extends Component {
     return (
       <Router>
       <Switch >
-      <Route path="/:category" component={Home} />
+      <Route path="/:category" render={(props) => <Home {...props} />}/>
       <Route path="/code" component={CodePage} />
       <Route path="/electronic" component={ElectronicMusic} />
       <Route path="/" component={Home} />
+      
       </Switch>
     </Router>
     );

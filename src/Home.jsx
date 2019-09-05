@@ -5,12 +5,11 @@ import Projects from './Projects.jsx'
 
 export default class Home extends Component {
     render() {
-      console.log(this.props.category)
         return (
-            <div class="container">
-      <h1 class="name">Charles Scheuer</h1>
-      <div class="rectangle"></div>
-      <div class="content">
+            <div className="container">
+      <h1 className="name">Charles Scheuer</h1>
+      <div className="rectangle"></div>
+      <div className="content">
         <Bio />
         <Projects category={this.props.category}/>
       </div>
