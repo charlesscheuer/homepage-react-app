@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route
 } from 'react-router-dom';
@@ -14,13 +14,12 @@ class App extends Component {
     return (
       <Router>
       <Switch >
-      <Route path="/Academic" render={(props) => <Home {...props}  category={0}/>}/>
-      <Route path="/Professional" render={(props) => <Home {...props}  category={1}/>}/>
-      <Route path="/Creative" render={(props) => <Home {...props}  category={2}/>}/>
-      <Route path="/code" component={CodePage} />
-      <Route path="/electronic" component={ElectronicMusic} />
-      <Route path="/" component={Home} />
-      
+        <Route path="/Academic" render={(props) => <Home {...props}  category={0}/>}/>
+        <Route path="/Professional" render={(props) => <Home {...props}  category={1}/>}/>
+        <Route path="/Creative" render={(props) => <Home {...props}  category={2}/>}/>
+        <Route path="/code" component={CodePage} />
+        <Route path="/electronic" component={ElectronicMusic} />
+        <Route path="/" component={Home} />
       </Switch>
     </Router>
     );
