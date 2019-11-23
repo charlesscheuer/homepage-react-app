@@ -29,9 +29,8 @@ class Projects extends Component {
           title="I'm learning about the ecological impacts of increased demand for cashmere and the issues presented by overgrazing."
           href='https://medium.com/@charlieschr/wool-research-ddcca8036458'
         >
-          Wool
+          Wool.
         </a>
-        .
       </p>
     );
   };
@@ -42,14 +41,15 @@ class Projects extends Component {
       <ul class='portfolio_paragraph'>
         <li class='portfolio_item'>
           <a
-            href='https://medium.com/swlh/lessons-learned-selling-cheap-electronics-on-amazon-7941dfe3eaac'
-            title='My experience with private labeling / selling on Amazon.'
+            href='https://www.imfree.fyi'
+            title='Meeting schedule app'
             class='portfolio_link'
             target='blank'
           >
-            Amazon private labeling:
+            Meeting schedule app:
           </a>{' '}
-          lessons learned selling 2,400 earbuds on Amazon
+          I built an app to allow individuals to find a mutual meeting time
+          without signing up
         </li>
         <li class='portfolio_item'>
           <a
@@ -62,17 +62,17 @@ class Projects extends Component {
           </a>{' '}
           my fleece brand creation
         </li>
+
         <li class='portfolio_item'>
           <a
-            href='https://www.imfree.fyi'
-            title='Meeting schedule app'
+            href='https://medium.com/swlh/lessons-learned-selling-cheap-electronics-on-amazon-7941dfe3eaac'
+            title='My experience with private labeling / selling on Amazon.'
             class='portfolio_link'
             target='blank'
           >
-            Meeting schedule app:
+            Amazon private labeling:
           </a>{' '}
-          I built an app to allow individuals to find a mutual meeting time
-          without signing up.
+          lessons learned selling 2,400 earbuds on Amazon
         </li>
       </ul>,
       <h4 class='portfolio_subhead'>Internships</h4>,
@@ -88,7 +88,7 @@ class Projects extends Component {
           </a>{' '}
           Software engineering internship during summer of 2019. Worked across
           the full stack (React & Ruby on Rails / postgresQL) to implement new
-          features and improve performance of home search.
+          features and improve the performance of existing ones.
         </li>
         <li class='portfolio_item'>
           <a
@@ -100,7 +100,7 @@ class Projects extends Component {
             Back Bay Audio:
           </a>{' '}
           learned how to source private label products and get them ranked on
-          Amazon's search engine
+          Amazon's search engine.
         </li>
         <li class='portfolio_item'>
           <a
@@ -112,7 +112,7 @@ class Projects extends Component {
             National Securities:
           </a>{' '}
           performed research on structured products and improved automation for
-          a &#36;200m producer
+          a &#36;200m producer.
         </li>
       </ul>
     ];
@@ -121,23 +121,25 @@ class Projects extends Component {
   renderCreative = () => {
     return (
       <p class='portfolio_paragraph'>
-        <Link to='/code' title="Some code I've written" class='portfolio_link'>
-          Code,
-        </Link>{' '}
+        I like to{' '}
         <a
           href='https://dribbble.com/Charlesscheuer'
           title='Check out some of my logo design work here.'
           class='portfolio_link'
           target='blank'
         >
-          Design,
+          design,
         </a>{' '}
+        <Link to='/code' title="Some code I've written" class='portfolio_link'>
+          code,
+        </Link>{' '}
+        and{' '}
         <Link
           to='/electronic'
           title='In my free time, I like to make electronic music in Ableton live'
           class='portfolio_link'
         >
-          Electronic music production{' '}
+          produce electronic music.{' '}
         </Link>
       </p>
     );
@@ -185,7 +187,7 @@ class Projects extends Component {
         {active === 1 && this.renderProfessional()}
         <div className='selector' onClick={() => this.activeChangeHandler(2)}>
           <ToggleArrow active={active === 2} />
-          <h2 class='portfolio'>Code / Creative</h2>
+          <h2 class='portfolio'>Creative / Code </h2>
         </div>
         {active === 2 && this.renderCreative()}
       </div>
