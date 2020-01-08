@@ -15,7 +15,7 @@ export default class CodePage extends Component {
             <br /> <br />
             This summer, I was a software engineering intern at{' '}
             <a
-              href='Flyhomes.com'
+              href='https://www.Flyhomes.com'
               title='Flyhomes'
               class='about_email'
               target='blank'
