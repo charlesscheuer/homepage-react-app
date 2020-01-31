@@ -14,72 +14,77 @@ $color-primary: #0c5a9f;
 $color-secondary: #f16055;
 $color-tertiary: #073359;
 $color-light: #faeddd;
-$color-selection: #80f9e1;
+$color-selection: #0c5a9f;
 
 // FONT VARIABLES
-$font-display: 'Hurme Geometric Sans', sans-serif;
-$font-serif: 'Josefin Slab', serif;
-$font-head: 'GT Walsheim Pro', sans-serif;
+$font-display: "Hurme Geometric Sans", sans-serif;
+$font-serif: "Josefin Slab", serif;
+$font-head: "GT Walsheim Pro", sans-serif;
 
 @font-face {
-  font-family: 'Hurme Geometric Sans';
-  src: url('../hurme-geometric-sans/hurme_geometric_sans.woff') format('woff');
+  font-family: "Hurme Geometric Sans";
+  src: url("../hurme-geometric-sans/hurme_geometric_sans.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Hurme Geometric Sans';
-  src: url('../hurme-geometric-sans/hurme-geometric-sans-3-bold.woff')
-    format('woff');
+  font-family: "Hurme Geometric Sans";
+  src: url("../hurme-geometric-sans/hurme-geometric-sans-3-bold.woff")
+    format("woff");
   font-weight: bold;
 }
 
 @font-face {
-  font-family: 'Hurme Geometric Sans';
-  src: url('../hurme-geometric-sans/hurme_geometric_oblique.woff')
-    format('woff');
+  font-family: "Hurme Geometric Sans";
+  src: url("../hurme-geometric-sans/hurme_geometric_oblique.woff")
+    format("woff");
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Hurme Geometric Sans';
-  src: url('../hurme-geometric-sans/hurme-geometric-sans-3-regular.woff')
-    format('woff');
+  font-family: "Hurme Geometric Sans";
+  src: url("../hurme-geometric-sans/hurme-geometric-sans-3-regular.woff")
+    format("woff");
   font-weight: 400;
 }
 
 @font-face {
-  font-family: 'GT Walsheim Pro';
-  src: url('../GT-Walsheim/GT-Walsheim-Pro-Medium.woff') format('woff');
+  font-family: "GT Walsheim Pro";
+  src: url("../GT-Walsheim/GT-Walsheim-Pro-Medium.woff") format("woff");
   font-weight: bold;
 }
 
 @font-face {
-  font-family: 'GT Walsheim Pro';
-  src: url('../GT-Walsheim/GT-Walsheim-Pro-Regular.woff') format('woff');
+  font-family: "GT Walsheim Pro";
+  src: url("../GT-Walsheim/GT-Walsheim-Pro-Regular.woff") format("woff");
   font-weight: regular;
 }
 
 ::selection {
   background-color: $color-selection;
+  color: #fff;
 }
 
 /*** Mozilla based browsers ***/
 ::-moz-selection {
   background-color: $color-selection;
+  color: #fff;
 }
 
 /***For Other Browsers ***/
 ::-o-selection {
   background-color: $color-selection;
+  color: #fff;
 }
 
 ::-ms-selection {
   background-color: $color-selection;
+  color: #fff;
 }
 
 /*** For Webkit ***/
 ::-webkit-selection {
   background-color: $color-selection;
+  color: #fff;
 }
 
 body {
@@ -232,6 +237,12 @@ body {
   margin-top: 0.5rem;
   margin-bottom: 0;
   font-size: 1.3rem;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
 
   &_item {
     list-style: none;
